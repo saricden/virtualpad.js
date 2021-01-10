@@ -1,5 +1,5 @@
 {
-  "name": "virtualboy",
+  "name": "virtualpad.js",
   "version": "1.0.0",
   "description": "A virtual gamepad for JS games.",
   "main": "dist/main.js",
