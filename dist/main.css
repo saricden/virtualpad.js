@@ -1,0 +1,71 @@
+html,
+body {
+  box-sizing: border-box;
+  border: solid 1px red;
+  overflow: hidden;
+}
+
+[data-vbjoystick] {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  left: 20px;
+  bottom: 30px;
+  border-radius: 100%;
+  border: solid 3px #FFF;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+[data-vbthumbstick] {
+  touch-action: none;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  border: solid 3px #FFF;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+[data-vbbtnpad] {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  width: 140px;
+  height: 140px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+[data-vbabtn],
+[data-vbbbtn] {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: solid 3px #FFF;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+[data-vbabtn] {
+  top: 10px;
+  left: 10px;
+}
+
+[data-vbbbtn] {
+  bottom: 10px;
+  right: 10px;
+}
