@@ -3,6 +3,7 @@ body {
   box-sizing: border-box;
   border: solid 1px red;
   overflow: hidden;
+  touch-action: none;
 }
 
 [data-vbjoystick] {
@@ -22,7 +23,6 @@ body {
 }
 
 [data-vbthumbstick] {
-  touch-action: none;
   width: 60px;
   height: 60px;
   position: absolute;
