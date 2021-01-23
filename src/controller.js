@@ -45,7 +45,15 @@ class VirtualBoy {
     return pad;
   }
 
-  bindUI(joystick = null, buttonPad = null, startSelect = null, menuTray = null) {
+  createStart() {
+    const startBtn = document.createElement('div');
+    startBtn.setAttribute('data-vbstart', true);
+    startBtn.innerHTML = 'START';
+
+    return startBtn;
+  }
+
+  bindUI(joystick = null, buttonPad = null, startBtn = null, menuTray = null) {
 
     window.virtualboy = {
       ui: {
