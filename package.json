@@ -1,6 +1,6 @@
 {
   "name": "virtualpad.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A virtual gamepad for JS games.",
   "main": "dist/main.js",
   "scripts": {
