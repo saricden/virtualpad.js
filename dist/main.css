@@ -71,6 +71,11 @@ body {
 }
 
 [data-vbstart] {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
   position: fixed;
   bottom: 40px;
   left: 50%;
