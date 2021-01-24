@@ -67,6 +67,9 @@ class VirtualBoy {
         },
         bBtn: {
           isDown: false
+        },
+        startBtn: {
+          isDown: false
         }
       }
     };
@@ -77,6 +80,10 @@ class VirtualBoy {
 
     if (buttonPad) {
       document.body.appendChild(buttonPad);
+    }
+
+    if (startBtn) {
+      document.body.appendChild(startBtn);
     }
 
     // Bind events
@@ -168,6 +175,20 @@ class VirtualBoy {
 
       bBtn.addEventListener('pointercancel', () => {
         window.virtualboy.ui.bBtn.isDown = false;
+      });
+    }
+
+    if (startBtn) {
+      aBtn.addEventListener('pointerdown', () => {
+        startBtn.virtualboy.ui.startBtn.isDown = true;
+      });
+
+      aBtn.addEventListener('pointerup', () => {
+        startBtn.virtualboy.ui.startBtn.isDown = false;
+      });
+
+      aBtn.addEventListener('pointercancel', () => {
+        startBtn.virtualboy.ui.startBtn.isDown = false;
       });
     }
 
