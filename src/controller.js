@@ -180,15 +180,15 @@ class VirtualBoy {
 
     if (startBtn) {
       startBtn.addEventListener('pointerdown', () => {
-        startBtn.virtualboy.ui.startBtn.isDown = true;
+        window.virtualboy.ui.startBtn.isDown = true;
       });
 
       startBtn.addEventListener('pointerup', () => {
-        startBtn.virtualboy.ui.startBtn.isDown = false;
+        window.virtualboy.ui.startBtn.isDown = false;
       });
 
       startBtn.addEventListener('pointercancel', () => {
-        startBtn.virtualboy.ui.startBtn.isDown = false;
+        window.virtualboy.ui.startBtn.isDown = false;
       });
     }
 
